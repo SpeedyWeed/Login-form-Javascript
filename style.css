@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgba(62, 160, 187, 0.58);
+    border-radius: 8px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    display: inline-block;
+    color: rgb(38, 35, 32);
+    text-decoration: none;
+    padding: 14px;
+}
+body{
+    background-color: #b6c4c1;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li a:hover{
+    color: rgb(39, 88, 83);
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px  rgba(62, 160, 187, 0.58);
+    display: none;
+}
+
+.dropdown-menu a{
+    display: block;
+    background-color:  rgba(62, 160, 187, 0.58);
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.container{
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.header{
+    background: linear-gradient(90deg, #3acbf0 0%, #8bb 100%);
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+}
+
+.form{
+    padding: 18px;
+}
+
+.form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.form-content input{
+    display: block;
+    width: 550px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.form button{
+    background-color: #3acbf0;
+    color: #fff;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.form-content.error input{
+    border-color: #ff3b25;
+}
+
+.form-content.error a{
+    color: #ff3b25;
+    visibility: visible;
+}
